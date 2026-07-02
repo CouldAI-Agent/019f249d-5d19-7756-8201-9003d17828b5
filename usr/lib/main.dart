@@ -28,8 +28,17 @@ class ChirokApp extends StatelessWidget {
       title: 'Chirok',
       theme: ThemeData(
         brightness: Brightness.dark,
-        primarySwatch: Colors.deepPurple,
         scaffoldBackgroundColor: Colors.black,
+        colorScheme: const ColorScheme.dark(
+          primary: Colors.purpleAccent,
+          secondary: Colors.deepPurpleAccent,
+          surface: Colors.black,
+        ),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.black,
+          foregroundColor: Colors.purpleAccent,
+          elevation: 0,
+        ),
       ),
       initialRoute: '/',
       routes: {

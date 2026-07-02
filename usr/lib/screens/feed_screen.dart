@@ -15,19 +15,19 @@ class _FeedScreenState extends State<FeedScreen> {
       'title': 'The Quantum Heist',
       'creator': '@sci_fi_dude',
       'desc': 'A fast-paced interactive sci-fi thriller.',
-      'color': '0xFF303F9F',
+      'color': '0xFF1A0B2E',
     },
     {
       'title': 'Midnight Cafe',
       'creator': '@mystery_tales',
       'desc': 'Who poisoned the barista? You decide.',
-      'color': '0xFF388E3C',
+      'color': '0xFF2A0845',
     },
     {
       'title': 'Lost in the Woods',
       'creator': '@horror_fan',
       'desc': 'Escape the forest before dawn.',
-      'color': '0xFFD32F2F',
+      'color': '0xFF11001C',
     },
   ];
 
@@ -78,8 +78,8 @@ class _FeedScreenState extends State<FeedScreen> {
                       icon: const Icon(Icons.play_arrow),
                       label: const Text('Play Interactive Story'),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white,
-                        foregroundColor: Colors.black,
+                        backgroundColor: Colors.purpleAccent,
+                        foregroundColor: Colors.white,
                         padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                       ),
                     ),
@@ -105,7 +105,7 @@ class _FeedScreenState extends State<FeedScreen> {
                 right: 16,
                 child: FloatingActionButton.small(
                   heroTag: 'studio',
-                  backgroundColor: Colors.deepPurple,
+                  backgroundColor: Colors.purpleAccent,
                   onPressed: () {
                     Navigator.pushNamed(context, '/studio');
                   },

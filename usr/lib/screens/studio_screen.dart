@@ -8,7 +8,7 @@ class StudioScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Creator Studio'),
-        backgroundColor: Colors.grey[900],
+        backgroundColor: Colors.black,
       ),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -42,7 +42,7 @@ class StudioScreen extends StatelessWidget {
       width: 150,
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.grey[850],
+        color: Colors.deepPurple.withOpacity(0.2),
         borderRadius: BorderRadius.circular(8),
         border: Border.all(color: color, width: 2),
       ),
